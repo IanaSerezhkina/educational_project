@@ -1,0 +1,117 @@
+SELECT 
+    purchase_date,
+    purchase_id,
+    client_id,
+    client_age,
+    client_registration_age,
+    client_category,
+    promotion_name,
+    category_name,
+    partner_name,
+    client_city,
+    city,
+    revenue,
+    quantity
+FROM
+    (
+    SELECT
+        purchase_date,
+        purchase_id,
+        client_id,
+        promotion_name,
+        client_category,
+        category_name,
+        partner_name,
+        (price * quantity) AS revenue,
+        quantity,
+        partner_id
+    FROM
+        (
+        SELECT
+            purchase_id,
+            partner_id,
+            client_id,
+            price,
+            quantity,
+            purchase_date,
+            status,
+            CASE
+                WHEN client_category='new' THEN 'new'
+                ELSE 'old'
+            END AS client_category
+        FROM 
+            (
+            SELECT 
+                purchase_id,
+                partner_id,
+                client_id,
+                price,
+                quantity,
+                parseDateTimeBestEffort(purchase_date) AS purchase_date,
+                status
+            FROM purchase
+            ) AS l
+        FULL JOIN
+            (
+            WITH (SELECT MIN(parseDateTimeBestEffort(purchase_date))
+            FROM purchase) AS min_date
+            
+            SELECT 
+                client_id,
+                first_purchase,
+                CASE
+                    WHEN first_purchase>=min_date THEN 'new'
+                    ELSE 'old'
+                END AS client_category
+            FROM
+                (
+                SELECT 
+                    client_id,
+                    MIN(parseDateTimeBestEffort(purchase_date)) AS first_purchase
+                FROM
+                    purchase
+                GROUP BY client_id
+                )
+            ) 
+        AS r
+            ON l.client_id=r.client_id AND l.purchase_date=r.first_purchase
+            HAVING 
+                status = 1 
+                AND toDate(purchase_date) >= '2020-05-01' 
+                AND toDate(purchase_date) <= '2020-08-01'
+        ) AS l
+    JOIN 
+        (
+        SELECT
+            partner_id,
+            promotion_name,
+            category_name,
+            partner_name
+        FROM promotion
+        )
+    AS r
+        ON l.partner_id=r.partner_id
+    ) AS l
+JOIN 
+    (
+    SELECT
+        client_id,
+        dateDiff('year', toDateTime(birth_date), today()) AS client_age,
+        dateDiff('day', toDateTime(registration), today()) AS client_registration_age,
+        client_city,
+        client_city_id,
+        city
+    FROM clients AS l
+    JOIN
+        (
+        SELECT
+            client_city,
+            client_city_id,
+            city
+        FROM city
+        )
+    AS r
+        ON l.client_city_id=r.client_city_id
+    )
+AS r
+    ON l.client_id=r.client_id
