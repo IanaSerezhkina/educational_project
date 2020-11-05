@@ -2,12 +2,12 @@
 
 Здесь будут расположены примеры проектов, которые могут отражать мои навыки в анализе, статистике, языках программирования (R, Python), SQL и визуализации. Список проектов пока небольшой, так как я только начинаю погружаться в область аналитики, но он будет пополняться.
 
-### 1. Анализ продуктовой корзины покупателя (<a href="https://github.com/IanaSerezhkina/educational_project/blob/master/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B8%CC%86%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B8%CC%86.ipynb" target="_blank"><b>Cсылка</b></a> на решение)
+### 1. Анализ продуктовой корзины покупателя (<a href="https://github.com/IanaSerezhkina/educational_project/blob/master/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B8%CC%86%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B8%CC%86.ipynb" target="_blank"><b>ссылка</b></a> на решение)
 ***Задача***
 
 В таблице содержится информация о покупках. Необходимо, воспользовавшись этими данными, выяснить, какие пары товаров пользователи чаще всего покупают вместе.
 
-### 2. Задача на знание SQL (<a href="https://github.com/IanaSerezhkina/educational_project/blob/master/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B8%CC%86%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B8%CC%86.ipynb" target="_blank"><b>Cсылка</b></a> на решение)
+### 2. Задача на знание SQL (<a href="https://github.com/IanaSerezhkina/educational_project/blob/master/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B8%CC%86%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B8%CC%86.ipynb" target="_blank"><b>ссылка</b></a> на решение)
 ***Задача***
 
 Даны 4 таблицы, необходимо из низ получить одну определенной структуры (подробнее в notebook). 
