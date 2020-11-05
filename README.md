@@ -2,12 +2,18 @@
 
 Здесь будут расположены примеры проектов, которые могут отражать мои навыки в анализе, статистике, языках программирования (R, Python), SQL и визуализации. Список проектов пока небольшой, так как я только начинаю погружаться в область аналитики, но он будет пополняться.
 
-### 1. Анализ продуктовой корзины покупателя (<a href="https://github.com/IanaSerezhkina/educational_project/blob/master/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B8%CC%86%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B8%CC%86.ipynb" target="_blank"><b>Cсылка</b></a> на скрипт)
+### 1. Анализ продуктовой корзины покупателя (<a href="https://github.com/IanaSerezhkina/educational_project/blob/master/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B8%CC%86%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B8%CC%86.ipynb" target="_blank"><b>Cсылка</b></a> на решение)
 ***Задача***
 
 В таблице содержится информация о покупках. Необходимо, воспользовавшись этими данными, выяснить, какие пары товаров пользователи чаще всего покупают вместе.
 
-### 2. Анализ бактериопланктона (<a href="https://github.com/IanaSerezhkina/educational_project/blob/master/Bacterioplankton.R" target="_blank"><b>ссылка</b></a> на скрипт)
+### 2. Задача на знание SQL (<a href="https://github.com/IanaSerezhkina/educational_project/blob/master/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B8%CC%86%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B8%CC%86.ipynb" target="_blank"><b>Cсылка</b></a> на решение)
+***Задача***
+
+Даны 4 таблицы, необходимо из низ получить одну определенной структуры (подробнее в notebook). 
+Были использованы функции: GROUP BY, HAVING, JOIN, CASE, WITH, вложенные запросы.
+
+### 3. Анализ бактериопланктона (<a href="https://github.com/IanaSerezhkina/educational_project/blob/master/Bacterioplankton.R" target="_blank"><b>ссылка</b></a> на скрипт)
 ***Для чего написан скрипт***
 
 Скрипт написан на языке R (в тот момент я не знала Python, только закончила на Stepik курсы по R и решила потренироваться), необходим для оптимизации рутинного анализа биологических данных. 
@@ -27,7 +33,7 @@
 - графики в формате гистограмм с распределением численности и биомассы в разных слоях;
 - распределение станций по группам в зависимости от того, в каком слое больше значения (всего рассматривали 4 группы) и построение гистограмм для этих групп.
 
-### 3. Проект по продуктовой аналитике (<a href="https://docs.google.com/spreadsheets/d/1G1QLzeS6NyQwuXnEv_ppVbJYapnsVeT_pZHuLXgijPI/edit?usp=sharing" target="_blank"><b>ссылка</b></a> на решение) 
+### 4. Проект по продуктовой аналитике (<a href="https://docs.google.com/spreadsheets/d/1G1QLzeS6NyQwuXnEv_ppVbJYapnsVeT_pZHuLXgijPI/edit?usp=sharing" target="_blank"><b>ссылка</b></a> на решение) 
 
 Проект для наглядности оформлен в Excel
 
